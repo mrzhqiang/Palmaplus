@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+  <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+    <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/fragment_map_base"/>
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/spinner"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:id="@+id/words"
+            android:textColor="@color/pink"
+            android:text="请单击屏幕，添加覆盖物"/>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom"
+          android:paddingBottom="20dp">
+
+    <LinearLayout
+            android:id="@+id/map_overlay_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+      <TextView
+              android:id="@+id/map_overlay_first"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="10dp"
+              android:singleLine="true"
+              android:textSize="15sp"
+              android:gravity="center"
+              android:textColor="@color/dark_grey"
+              android:text="remove first"
+              android:background="@drawable/button_bg_selector"/>
+
+      <TextView
+              android:id="@+id/map_overlay_last"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:singleLine="true"
+              android:layout_marginLeft="5dp"
+              android:textSize="15sp"
+              android:gravity="center"
+              android:textColor="@color/dark_grey"
+              android:text="remove last"
+              android:background="@drawable/button_bg_selector"/>
+
+      <TextView
+              android:id="@+id/map_overlay_all"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="5dp"
+              android:layout_marginRight="10dp"
+              android:gravity="center"
+              android:textSize="15sp"
+              android:singleLine="true"
+              android:textColor="@color/dark_grey"
+              android:text="remove all"
+              android:background="@drawable/button_bg_selector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/map_overlay_bottom"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+      <TextView
+              android:id="@+id/map_overlay_hide"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="20dp"
+              android:gravity="center"
+              android:visibility="visible"
+              android:textSize="18sp"
+              android:textColor="@color/dark_grey"
+              android:text="hide first"
+              android:background="@drawable/button_bg_selector"/>
+
+      <TextView
+              android:id="@+id/map_overlay_show"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="15dp"
+              android:visibility="visible"
+              android:layout_marginRight="20dp"
+              android:gravity="center"
+              android:textSize="18sp"
+              android:textColor="@color/dark_grey"
+              android:text="show last"
+              android:background="@drawable/button_bg_selector"/>
+
+    </LinearLayout>
+          <RadioGroup
+              android:layout_width="match_parent"
+              android:layout_above="@id/map_overlay_bottom"
+              android:layout_height="wrap_content"
+              android:id="@+id/change_icon"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:orientation="horizontal">
+                  <RadioButton
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="红"
+                      android:checked="true"
+                      android:id="@+id/red"
+                      android:layout_height="wrap_content"/>
+                  <RadioButton
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="绿"
+                      android:id="@+id/green"
+                      android:layout_height="wrap_content"/>
+                  <RadioButton
+                      android:layout_width="0dp"
+                      android:layout_weight="1"
+                      android:text="蓝"
+                      android:id="@+id/blue"
+                      android:layout_height="wrap_content"/>
+
+          </RadioGroup>
+  </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 常用颜色 -->
+    <color name="gray_light">#b7c0bc</color>
+    <color name="dark_grey">#5D5959</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#33aaaaaa</color>
+    <color name="red">#ffff0000</color>
+    <color name="yellow">#ffcf53</color>
+    <color name="bg_after_text">#a2ce62</color>
+    <color name="scan_red">#ee3e53</color>
+    <color name="pink">#FA6E9F</color>
+
+    <color name="list_item_text_color_pressed">#FEFFFF</color>
+    <color name="list_item_text_color">#666666</color>
+    <color name="list_item_divider">#D6D6D5</color>
+
+    <!--actionBar-->
+    <color name="action_bar_title_color_default">#ffffff</color>
+    <color name="action_bar_little_title_color_default">#ffffff</color>
+    <color name="action_bar_bg_color">#EE3E53</color>
+    <color name="action_bar_title_color">#ffffff</color>
+
+    <!-- 地图模块 -->
+    <color name="floor_list_item_bg">#9fffffff</color>
+    <color name="floor_list_pressed_bg">#9fdedede</color>
+    <color name="floor_list_name_color">#5EC6EB</color>
+
+</resources>

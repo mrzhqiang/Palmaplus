@@ -1,0 +1,13 @@
+com.palmaplus.nagrand.core
+com.palmaplus.nagrand.data
+com.palmaplus.nagrand.geos
+com.palmaplus.nagrand.io
+com.palmaplus.nagrand.navigate
+com.palmaplus.nagrand.position
+com.palmaplus.nagrand.position.ble
+com.palmaplus.nagrand.position.ble.utils
+com.palmaplus.nagrand.position.wifi
+com.palmaplus.nagrand.view
+com.palmaplus.nagrand.view.adapter
+com.palmaplus.nagrand.view.gestures
+com.palmaplus.nagrand.view.layer

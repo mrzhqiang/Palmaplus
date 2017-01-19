@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+  <RelativeLayout
+          android:id="@+id/map_view_container"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+  </RelativeLayout>
+
+  <Spinner
+          android:id="@+id/spinner"
+          android:layout_margin="10dp"
+          android:layout_alignParentTop="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+  <RelativeLayout
+          android:id="@+id/map_overlay_container"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+
+  </RelativeLayout>
+
+  <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_margin="10dp">
+
+    <RadioGroup
+            android:id="@+id/map_function_radio_group"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp">
+
+      <RadioButton
+              android:id="@+id/radio_btn_1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:checked="true"
+              android:text="Radio1"/>
+
+      <RadioButton
+              android:id="@+id/radio_btn_2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Radio2"/>
+
+      <RadioButton
+              android:id="@+id/radio_btn_3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:text="Radio3"/>
+
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/map_function_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map_function_radio_group"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#F56565"
+            android:text="请选择不同的RadioButton"
+            android:gravity="center"/>
+
+  </RelativeLayout>
+
+</RelativeLayout>
